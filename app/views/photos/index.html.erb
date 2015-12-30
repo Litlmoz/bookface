@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>David Solis | Designer</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 <body>
 
   <header>
@@ -37,7 +30,15 @@
       <% end %>
     </tbody>
   </table>
+  <%= link_to 'New Photo', new_photo_path %>
+  <section>
+    <%= yield %>
+  </section>
+    <footer>
+      <a href="https://twitter.com/soliskit"><img src="https://s3-us-west-1.amazonaws.com/soliskit/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+      <a href="https://facebook.com/litlmoz"><img src="https://s3-us-west-1.amazonaws.com/soliskit/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      <p>&copy; 2016 David Solis.</p>
+    </footer>
 
-<br>
-
-<%= link_to 'New Photo', new_photo_path %>
+</body>
+</html>

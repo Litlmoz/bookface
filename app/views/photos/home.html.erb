@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>David Solis | Designer</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 <body>
 
   <header>
@@ -24,7 +17,6 @@
   </header>
   <div id="wrapper">
     <section>
-
       <%= yield %>
     </section>
     <footer>
@@ -33,5 +25,6 @@
       <p>&copy; 2016 David Solis.</p>
     </footer>
   </div>
+
 </body>
 </html>
