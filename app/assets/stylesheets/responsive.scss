@@ -1,8 +1,11 @@
+ 
   #gallery li {
     width: 28.3333%;
   }
+  
 
-/********************************
+
+  /********************************
   PAGE: ABOUT
   *********************************/
 
@@ -11,6 +14,8 @@
     margin: 0 5% 80px 0;
   }
 
+
+  
   /********************************
   TWO COLLUMN MOBILE LAYOUT
   *********************************/
@@ -20,14 +25,16 @@
     width: 45%;
     float: left;
   }
-
-  econdary {
+  
+  #secondary {
     width: 40%;
     float: right;
-  }
+  }  
 }
 
- ********************************
+
+
+  /********************************
   HEADER
   *********************************/
 
@@ -40,25 +47,25 @@
     text-align: right;
     width: 45%;
   }
-
-  #log{
+  
+  #logo {
     float: left;
     margin-left: 5%;
     text-align: left;
     width: 45%;
   }
-
+  
   h1 {
-  font-size: 2.5em;
+    font-size: 2.5em;
   }
-
+  
   h2 {
-   ont-size: 0.825em;
+    font-size: 0.825em;
     margin-bottom: 20px;
   }
-
+  
   header {
-  border-bottom: 5px solid #6BB9F0;
+    border-bottom: 5px solid #6BB9F0;
     margin-bottom: 60px;
   }
 }
