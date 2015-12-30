@@ -6,7 +6,6 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Ariel, sans-serif;
 }
 
-
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
@@ -16,16 +15,6 @@ body {
 a {
   text-decoration: none;
 }
-
-img {
-  max-width: 100%;
-}
-
-h3 {
-  margin: 0 0 1em 0;
-}
-
-
 
 /********************************
 HEADING
@@ -45,7 +34,7 @@ header {
 }
 
 h1 {
-  font-family: 'Avenir', 'Helvetica', Helvetica, Ariel, sans-serif;
+  font-family: 'Helvetica','Avenir', Helvetica, Ariel, sans-serif;
   margin: 15px 0;
   font-size: 1.75em;
   font-weight: normal;
@@ -59,7 +48,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Avenir', 'Helvetica', Helvetica, Ariel, sans-serif;
+  font-family: 'Helvetica', 'Avenir', Helvetica, Ariel, sans-serif;
 }
 
 /********************************
@@ -89,7 +78,6 @@ nav a {
 }
 
 
-
 /********************************
 FOOTER
 *********************************/
@@ -111,7 +99,7 @@ footer {
 
 
 /********************************
-PAGE: PORTFOLIO
+PAGE: PHOTO GALLERY
 *********************************/
 
 #gallery {
@@ -149,7 +137,6 @@ PAGE: ABOUT
 }
 
 
-
 /********************************
 PAGE: CONTACT
 *********************************/
@@ -171,17 +158,16 @@ PAGE: CONTACT
 }
 
 .contact-info li.phone a {
-  background-image: url('../img/phone.png');
+  background-image: url('https://s3-us-west-1.amazonaws.com/soliskit/phone.png');
 }
 
 .contact-info li.mail a {
-  background-image: url('../img/mail.png');
+  background-image: url('https://s3-us-west-1.amazonaws.com/soliskit/mail.png');
 }
 
 .contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
+  background-image: url('https://s3-us-west-1.amazonaws.com/soliskit/twitter.png');
 }
-
 
 
 /********************************

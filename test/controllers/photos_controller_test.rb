@@ -16,13 +16,13 @@ class PhotosControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create photo" do
-    assert_difference('Photo.count') do
-      post :create, photo: { image: @photo.image, presentation_order: @photo.presentation_order, text: @photo.text }
-    end
-
-    assert_redirected_to photo_path(assigns(:photo))
-  end
+  # test "should create photo" do
+  #   assert_difference('Photo.count') do
+  #     post :create, photo: { image: @photo.image, presentation_order: @photo.presentation_order, text: @photo.text }
+  #   end
+  #
+  #   assert_redirected_to photo_path(assigns(:photo))
+  # end
 
   test "should show photo" do
     get :show, id: @photo
