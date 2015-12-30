@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+
+  root 'photos#home'
+
   resources :photos
-  resources :photos
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
