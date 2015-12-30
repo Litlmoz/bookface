@@ -3,9 +3,9 @@
 one:
   image: MyString
   text: MyString
-  presentation_order: 1
+  presentation_order: 2
 
 two:
   image: MyString
   text: MyString
-  presentation_order: 1
+  presentation_order: 5
