@@ -7,6 +7,7 @@
     <tr>
       <th>Image</th>
       <th>Text</th>
+      <th>Presentation order</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= photo.image %></td>
         <td><%= photo.text %></td>
+        <td><%= photo.presentation_order %></td>
         <td><%= link_to 'Show', photo %></td>
         <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
         <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>

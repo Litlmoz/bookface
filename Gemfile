@@ -19,6 +19,10 @@ gem 'puma', '~> 2.15.3'
 gem 'rails_12factor'
 # Use Devise as authentication database
 gem 'devise'
+# CanCan is an authorization library for Ruby on Rails
+gem 'cancancan', '~> 1.10'
+# Rails forms made easy
+gem 'simple_form'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
