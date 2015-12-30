@@ -16,7 +16,7 @@
     </a>
     <nav>
       <ul>
-        <li><a href="/photos" class ="selected">Portfolio</a></li>
+        <li><a <%= link_to 'Photo Gallery', photos_path %></a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -28,9 +28,9 @@
       <%= yield %>
     </section>
     <footer>
-      <a href="https://twitter.com/padraic7706"><img src="/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-      <a href="https://facebook.com/litlmoz"><img src="/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
-      <p>&copy; 2015 David Solis.</p>
+      <a href="https://twitter.com/soliskit"><img src="https://s3-us-west-1.amazonaws.com/soliskit/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+      <a href="https://facebook.com/litlmoz"><img src="https://s3-us-west-1.amazonaws.com/soliskit/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      <p>&copy; 2016 David Solis.</p>
     </footer>
   </div>
 </body>
