@@ -2,9 +2,11 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '~> 4.2.5'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
+# Use Puma to run highly concurrent HTTP 1.1 server for Ruby/Rack applications
+gem 'puma', '~> 2.15.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -13,16 +15,18 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-# Use Puma to run highly concurrent HTTP 1.1 server for Ruby/Rack applications
-gem 'puma', '~> 2.15.3'
+
 # Replaces the need for plugins, and ensures that Rails 4 is optimally configured for executing on Heroku.
 gem 'rails_12factor'
 # Use Devise as authentication database
 gem 'devise'
 # CanCan is an authorization library for Ruby on Rails
 gem 'cancancan', '~> 1.10'
+
 # Rails forms made easy
 gem 'simple_form'
+# This gem can help you work fine with Enum feather, I18n and simple_form
+gem 'enum_help'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
