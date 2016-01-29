@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Years & Years</title>
+    <title>David Solis</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -13,9 +13,9 @@
       </header>
         <%= yield %>
       <footer>
-        <a href="https://twitter.com/soliskit"><img src="https://s3-us-west-1.amazonaws.com/soliskit/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-        <a href="https://facebook.com/litlmoz"><img src="https://s3-us-west-1.amazonaws.com/soliskit/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
-        <p>&copy; 2016 David Solis.</p>
+        <a href="https://twitter.com/soliskit"><%= image_tag 'social-icon/twitter_logo.jpg', class: :'social-icon' %></a>
+        <a href="https://davidsoliskit.tumblr.com"><%= image_tag 'social-icon/tumblr_logo_white_transparent.jpg', class: :"social-icon" %></a>
+        <p>&copy; <%= (Time.now).year %> David Solis.</p>
       </footer>
     </body>
 </html>
