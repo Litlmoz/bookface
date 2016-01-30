@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-  root 'photos#home'
+  root 'pages#index'
+  
+  get 'pages/about'
+  get 'pages/bio'
 
   resources :photos
 
