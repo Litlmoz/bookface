@@ -19,6 +19,33 @@ h2 {
 dd, dt {
   line-height: 1.6;
 }
+
+/********************************
+HOMEPAGE
+*********************************/
+#homepage-photo {
+  min-width: 800px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#homepage {
+  background-color: #15131a;
+}
+
+/********************************
+ABOUT ME
+*********************************/
+.profile-photo {
+  display: block;
+  margin: 30px auto 20px auto;
+  max-width: 150px;
+  border-radius: 100%;
+}
+
 /********************************
 HEADER
 *********************************/
@@ -33,32 +60,9 @@ header * :hover {
 }
 
 /********************************
-HOMEPAGE
-*********************************/
-#index-photo {
-  min-width: 800px;
-  top: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-}
-
-#homepage {
-  background-color: #15131a;
-}
-
-.profile-photo {
-  display: block;
-  margin: 30px auto 20px auto;
-  max-width: 150px;
-  border-radius: 100%;
-}
-
-/********************************
 FOOTER
 *********************************/
-#desktop-footer {
+.desktop-footer {
   position: fixed;
   bottom: 0;
   right: 20px;
@@ -69,16 +73,12 @@ FOOTER
   color: white;
 }
 
-#mobile-footer {
+.mobile-footer {
   font-size: 0.75em;
   text-align: center;
   clear: both;
   padding-top: 20px;
   color: white;
-}
-
-#push {
-  height: 460px;
 }
 
 .social-icon {
