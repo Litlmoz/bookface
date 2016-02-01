@@ -2,11 +2,11 @@
 <html>
   <body>
     <section>
-      <div class='container wrapper'>
+      <div class='container wrapper col-xs-10 col-xs-offset-1'>
         <h2>Photos</h2>
         <br>
       </div>
-        <div class='container wrapper'>
+        <div class='wrapper col-xs-10 col-xs-offset-1'>
           <div class='row'>
             <% @photos.each do |photo| %>
               <div class='col-sm-6 col-md-4'>
@@ -15,7 +15,7 @@
                     <%= image_tag photo.image %>
                   <% end %>
                 </div>
-                <div class='caption'>
+                <div class='caption text-center'>
                   <p><%= photo.text.downcase.titleize %><p>
                 </div>
               </div>
