@@ -10,7 +10,12 @@
             <% @photos.each do |photo| %>
               <div class='col-sm-6 col-md-4'>
                 <div class='thumbnail'>
-                  <%= link_to image_tag(photo.image), class: 'img-responsive' %>
+                  <% link_to photo, photo_path do %>
+                    <%= image_tag(photo.image) %>
+                  <% end %>
+                </div>
+                <div class='caption'>
+                  <p><%= photo.text.downcase.titleize %><p>
                 </div>
               </div>
             <% end %>
