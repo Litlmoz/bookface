@@ -10,9 +10,9 @@
     <body>
       <header>
         <h1><%= link_to 'D/\VID', root_path %></h1>
-        <h4><%= link_to_unless_current 'a brief about me', pages_about_path %></h4>
-        <h4><%= link_to_unless_current 'photography', photos_path %></h4>
-        <h4><%= link_to_unless_current 'blog', pages_blog_path %></h4>
+        <h4><%= link_to 'a brief about me', pages_about_path %></h4>
+        <h4><%= link_to 'photography', photos_path %></h4>
+        <h4><%= link_to 'blog', pages_blog_path %></h4>
         <br>
       </header>
         <%= yield %>
