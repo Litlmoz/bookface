@@ -1,18 +1,7 @@
-<p>
-  <strong>Image:</strong>
-  <%= image_tag(@photo.image) %>
-</p>
+<div class='container wrapper'>
+  <h2><%= @photo.text %></h2><br>
+</div>
 
-<p>
-  <strong>Text:</strong>
-  <%= @photo.text %>
-</p>
-
-<p>
-  <strong>Presentation order:</strong>
-  <%= @photo.presentation_order %>
-</p>
-
-<!-- <td><% link_to 'Show', photo %></td>
-<td><% link_to 'Edit', edit_photo_path(photo) %></td>
-<td><% link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+<div class='container wrapper'>
+  <%=  image_tag @photo.image, class: 'img-responsive' %>
+</div>
