@@ -1,11 +1,11 @@
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/bcrypt-3.1.10/ext/mri
-/Users/davidsolis/.rvm/rubies/ruby-2.2.3/bin/ruby -r ./siteconf20151218-42433-175wqir.rb extconf.rb
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/bcrypt-3.1.10/ext/mri
+/Users/davidsolis/.rvm/rubies/ruby-2.2.3/bin/ruby -r ./siteconf20160201-91261-1i1pb79.rb extconf.rb
 creating Makefile
 
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/bcrypt-3.1.10/ext/mri
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/bcrypt-3.1.10/ext/mri
 make "DESTDIR=" clean
 
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/bcrypt-3.1.10/ext/mri
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/bcrypt-3.1.10/ext/mri
 make "DESTDIR="
 compiling bcrypt_ext.c
 compiling crypt.c
@@ -15,6 +15,6 @@ compiling wrapper.c
 linking shared-object bcrypt_ext.bundle
 ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
 
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/bcrypt-3.1.10/ext/mri
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/bcrypt-3.1.10/ext/mri
 make "DESTDIR=" install
-/usr/bin/install -m 0755 bcrypt_ext.bundle ./.gem.20151218-42433-e9rhhh
+/usr/bin/install -m 0755 bcrypt_ext.bundle ./.gem.20160201-91261-13ds0qh

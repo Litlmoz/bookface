@@ -1,5 +1,5 @@
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/pg-0.18.4/ext
-/Users/davidsolis/.rvm/rubies/ruby-2.2.3/bin/ruby -r ./siteconf20151218-21317-ukjccs.rb extconf.rb --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/pg-0.18.4/ext
+/Users/davidsolis/.rvm/rubies/ruby-2.2.3/bin/ruby -r ./siteconf20160201-91261-5j2ii7.rb extconf.rb --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config
 Using config values from /Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config
 checking for libpq-fe.h... yes
 checking for libpq/libpq-fs.h... yes
@@ -43,12 +43,12 @@ creating Makefile
 
 To see why this extension failed to compile, please check the mkmf.log which can be found here:
 
-  /Users/davidsolis/Documents/bookface/vendor/bundle/extensions/x86_64-darwin-14/2.2.0-static/pg-0.18.4/mkmf.log
+  /Users/davidsolis/Documents/soliskit/vendor/bundle/extensions/x86_64-darwin-14/2.2.0-static/pg-0.18.4/mkmf.log
 
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/pg-0.18.4/ext
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/pg-0.18.4/ext
 make "DESTDIR=" clean
 
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/pg-0.18.4/ext
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/pg-0.18.4/ext
 make "DESTDIR="
 compiling gvl_wrappers.c
 compiling pg.c
@@ -76,6 +76,6 @@ compiling util.c
 linking shared-object pg_ext.bundle
 ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
 
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/pg-0.18.4/ext
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/pg-0.18.4/ext
 make "DESTDIR=" install
-/usr/bin/install -m 0755 pg_ext.bundle ./.gem.20151218-21317-c7a33j
+/usr/bin/install -m 0755 pg_ext.bundle ./.gem.20160201-91261-11ci7sj

@@ -1,16 +1,16 @@
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
-/Users/davidsolis/.rvm/rubies/ruby-2.2.3/bin/ruby -r ./siteconf20151218-21317-1t2xe1u.rb extconf.rb
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+/Users/davidsolis/.rvm/rubies/ruby-2.2.3/bin/ruby -r ./siteconf20160201-91261-l40siu.rb extconf.rb
 creating Makefile
 
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
 make "DESTDIR=" clean
 
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
 make "DESTDIR="
 compiling debug_inspector.c
 linking shared-object debug_inspector.bundle
 ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
 
-current directory: /Users/davidsolis/Documents/bookface/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+current directory: /Users/davidsolis/Documents/soliskit/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
 make "DESTDIR=" install
-/usr/bin/install -m 0755 debug_inspector.bundle ./.gem.20151218-21317-1rp8yni
+/usr/bin/install -m 0755 debug_inspector.bundle ./.gem.20160201-91261-1t3nl8
