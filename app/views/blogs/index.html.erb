@@ -1,0 +1,35 @@
+<div class='container col-xs-10 col-xs-offset-1'>
+  <p id="notice"><%= notice %></p>
+
+  <h1>Blog Posts</h1>
+
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Post</th>
+        <th>Date</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @blogs.each do |blog| %>
+        <tr>
+          <td><%= blog.title %></td>
+          <td><%= blog.post %></td>
+          <td><%= (blog.post_date).to_formatted_s(:rfc822) %></td>
+          <td>
+            <%= link_to blog, class: 'col-sm-offset-2 btn btn-sm' do %>
+              <span class='glyphicon glyphicon-info-sign'></span>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Post', new_blog_path, class: 'col-sm-offset-2 btn btn-success' %>
+</div>
