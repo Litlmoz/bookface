@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :blogs
   root 'pages#index'
 
   get 'pages/about'
   get 'pages/blog'
 
-  resources :photos
+  resources :photos, :blogs, :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
