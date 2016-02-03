@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
-  root 'pages#index'
+  root to: 'pages#index'
 
   get 'pages/about'
   get 'pages/blog'
+
+  devise_for :users
 
   resources :photos, :blogs, :users
 
