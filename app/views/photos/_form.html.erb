@@ -3,6 +3,6 @@
 
     <%= f.input :image %>
     <%= f.input :text %>
-    <%= f.input :presentation_order %>
+    <%= f.input :presentation_order, collection: 1..100 %>
     <%= f.button :submit, class: 'col-sm-offset-2 btn btn-default' %>
     <% end %>

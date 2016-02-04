@@ -2,11 +2,8 @@
 <html>
   <body>
     <section>
-      <div class='container wrapper col-xs-10 col-xs-offset-1'>
-        <h2>Photos</h2>
-        <br>
-      </div>
         <div class='wrapper col-xs-10 col-xs-offset-1'>
+          <br>
           <div class='row'>
             <% @photos.each do |photo| %>
               <div class='col-sm-6 col-md-4'>
@@ -21,7 +18,7 @@
               </div>
             <% end %>
           </div>
-          <%= link_to 'New Photo', new_photo_path %>
+          <%= link_to 'Upload Photo', new_photo_path, class: 'col-sm-offset-2 btn btn-success' %>
         </div>
         <%= yield %>
     </section>
