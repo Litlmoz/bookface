@@ -4,15 +4,34 @@
   <section>
     <div class='wrapper col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2'>
       <%= image_tag 'me.jpg', class: :'img-responsive profile-photo', alt: 'profile photo' %>
+
       <h2>About Me</h2>
-      <br>
+
         <dl class='col-md-8 col-md-offset-2'>
           <dd>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt nibh non suscipit gravida. Morbi maximus varius erat sed suscipit. Maecenas malesuada ornare lorem sit amet congue. Vestibulum leo leo, facilisis eu vulputate eu, vehicula et purus. Cras velit nunc, eleifend sed cursus vehicula, facilisis eu dui. Duis non accumsan lacus. Mauris maximus, diam eu accumsan tincidunt, mi dolor vestibulum erat, vitae placerat tellus lorem vel purus. Phasellus sed arcu quis odio mattis commodo. Maecenas eu congue eros. Vivamus felis risus, congue sit amet euismod nec, tincidunt nec nulla. Aliquam varius augue lacus, vitae congue arcu condimentum nec.
             Aliquam fringilla, urna nec aliquet congue, mi metus pulvinar neque, sit amet bibendum sem tortor vitae sem. Aenean nec volutpat urna. Nullam sed orci sit amet dui lacinia hendrerit. Maecenas rhoncus, est non viverra viverra, massa justo mattis lectus, nec ultricies nibh enim sed nisl. Sed vestibulum nibh mi, et semper ex accumsan ut. Donec ex tortor, auctor sed tempus vel, feugiat sed dui. Vivamus sit amet lectus elit. Aliquam velit risus, finibus ut purus in, pellentesque consectetur urna. Vestibulum tellus nisi, dapibus et orci id, varius feugiat eros. Fusce condimentum maximus ante, at elementum nunc vestibulum vel. Ut fermentum venenatis diam, in ultrices mi accumsan semper. Nam ligula lacus, tempus id dignissim eget, ultricies a ipsum.
           </dd>
+          <dd>
+            <div class='btn-group col-xs-offset-8' role='group'>
+              <a href='mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#115;&#111;&#108;&#105;&#115;&#107;&#105;&#116;&#046;&#099;&#111;&#109;',
+                          class='col-sm col-xs-offset-2 btn btn-default'>
+                <span class='glyphicon glyphicon-envelope'></span>
+              </a>
+              <a href='https://github.com/Litlmoz',
+                          class='col-sm col-xs-offset-2 btn btn-default' >
+                <span>
+                  <%= image_tag 'social-icon/git_hub_black.png',
+                          style: :'width: 14px; height: 14px;'%>
+                </span>
+              </a>
+              <a href='tel:4156356602',
+                          class='col-sm col-xs-offset-2 btn btn-default'>
+                <span class='glyphicon glyphicon-earphone'></span>
+              </a>
+            </div>
+          </dd>
         </dl>
-      </div>
     </div>
   </section>
 </body>
