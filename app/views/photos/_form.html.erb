@@ -1,13 +1,8 @@
-<%= simple_form_for(@photo) do |f| %>
+<%= simple_form_for(@photo, html: { class: 'form-horizontal'}) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
     <%= f.input :image %>
     <%= f.input :text %>
     <%= f.input :presentation_order %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+    <%= f.button :submit, class: 'col-sm-offset-2 btn btn-default' %>
+    <% end %>
