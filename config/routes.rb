@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
-  root to: 'pages#index'
+  root to: 'page#index'
 
-  get 'pages/about'
-  get 'pages/blog'
+  get 'page/about'
+  get 'page/blog'
 
   devise_for :users
 
