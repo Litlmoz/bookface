@@ -4,6 +4,10 @@
     <section>
         <div class='wrapper col-xs-10 col-xs-offset-1'>
           <br>
+          <% if can? :manage, Photo %>
+            <%= link_to 'Upload Photo', new_photo_path, class: 'col-sm-offset-2 btn btn-success' %>
+          <% end %>
+
           <div class='row'>
             <% @photos.each do |photo| %>
               <div class='col-sm-6 col-md-4'>
@@ -18,9 +22,6 @@
               </div>
             <% end %>
           </div>
-          <% if can? :manage, Photo %>
-            <%= link_to 'Upload Photo', new_photo_path, class: 'col-sm-offset-2 btn btn-success' %>
-          <% end %>
         </div>
     </section>
   </body>
