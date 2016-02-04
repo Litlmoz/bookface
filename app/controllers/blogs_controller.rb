@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
   # GET /blogs

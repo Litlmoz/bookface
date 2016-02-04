@@ -1,10 +1,10 @@
 class PageController < ApplicationController
+  skip_authorization_check
+
   def index
   end
 
   def about
   end
 
-  def bio
-  end
 end

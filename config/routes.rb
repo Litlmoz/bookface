@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root to: 'page#index'
 
   get 'page/about'
-  get 'page/blog'
 
   devise_for :users
 
