@@ -1,7 +1,7 @@
 <div class='container wrapper col-xs-10 col-xs-offset-1'>
-  <h2><%= @blog.title %></h2>
-  <h3><%= @blog.post %></h3>
-  <%= (@blog.post_date).to_formatted_s(:rfc822) %><br>
+  <h3><%= @blog.title %></h3>
+  <h4><%= @blog.post %></h4>
+  <h6><%= (@blog.post_date).to_formatted_s(:rfc822) %></h6>
   <% if can? :manage, Blog %>
     <div class='btn-group'>
       <%= link_to 'Edit', edit_blog_path(@blog), class:'col-sm btn btn-default' %>

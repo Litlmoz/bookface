@@ -1,19 +1,19 @@
 <div class='wrapper col-xs-10 col-xs-offset-1'>
-  <h2>My random musings</h2>
+  <h2>My Blog</h2>
+
+  <% if can? :manage, Blog %>
+    <%= link_to 'New Post', new_blog_path, class: 'col-sm-offset-2 btn btn-success' %>
+  <% end %>
 
     <div class='row'>
       <% @blogs.each do |blog| %>
-        <div class='col-sm-6 col-md-4'>
-          <h3><%= blog.title %><h3>
-          <h4><%= blog.post %><h4>
-          <h6><%= (blog.post_date).to_formatted_s(:rfc822) %><h6>
-          <%= link_to blog, class: 'col-sm btn btn-default' do %>
-            <span class='glyphicon glyphicon-info-sign'></span>
+        <div class='col-md-12 col-lg-12'>
+          <h3><%= blog.title %></h3>
+          <h4><%= blog.post %></h4>
+          <%= link_to blog, class: 'col-xs-offset-9 col-sm-offset-10 label label-default' do %>
+            <span><%= (blog.post_date).to_formatted_s(:rfc822) %></span>
           <% end %>
         </div>
       <% end %>
     </div>
-    <% if can? :manage, Blog %>
-      <%= link_to 'New Post', new_blog_path, class: 'col-sm-offset-2 btn btn-success' %>
-    <% end %>
 </div>
