@@ -8,11 +8,11 @@
     <div class='row'>
       <% @blogs.each do |blog| %>
         <dl class='col-md-8 col-md-offset-2'>
-          <dt><%= blog.title %></dt>
+          <dt><%=  blog.title %></dt>
           <dd><%= blog.post %></dd>
-          <%= link_to blog, class: 'col-xs-offset-9 col-sm-offset-10 label label-default' do %>
+          <dd><%= link_to blog, class: 'col-xs-offset-9 col-sm-offset-10 label label-default' do %>
             <span><%= (blog.post_date).to_formatted_s(:rfc822) %></span>
-          <% end %>
+          <% end %></dd>
         </dl>
       <% end %>
     </div>
