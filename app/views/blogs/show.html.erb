@@ -1,6 +1,6 @@
 <dl class='wrapper col-md-8 col-md-offset-2'>
   <dt><%= @blog.title %></dt><br>
-  <dd><%= @blog.post %></dd>
+  <dd><%= @blog.post %></dd><br>
   <dd><%= (@blog.post_date).to_formatted_s(:rfc822) %></dd>
   <% if can? :manage, Blog %>
     <div class='btn-group'>
@@ -8,4 +8,5 @@
       <%= link_to 'Back', blogs_path, class:'col-sm btn btn-default' %>
     </div>
   <% end %>
+  <%= link_to 'Back', blogs_path, class:'col-sm col-sm-offset-10 col-xs-offset-10 btn navigation' %>
 </dl>
