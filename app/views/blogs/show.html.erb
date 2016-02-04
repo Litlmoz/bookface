@@ -1,11 +1,11 @@
-<div class='wrapper col-xs-10 col-xs-offset-1'>
-  <h3><%= @blog.title %></h3>
-  <h4><%= @blog.post %></h4>
-  <h6><%= (@blog.post_date).to_formatted_s(:rfc822) %></h6>
+<dl class='wrapper col-md-8 col-md-offset-2'>
+  <dt><%= @blog.title %></dt><br>
+  <dd><%= @blog.post %></dd>
+  <dd><%= (@blog.post_date).to_formatted_s(:rfc822) %></dd>
   <% if can? :manage, Blog %>
     <div class='btn-group'>
       <%= link_to 'Edit', edit_blog_path(@blog), class:'col-sm btn btn-default' %>
       <%= link_to 'Back', blogs_path, class:'col-sm btn btn-default' %>
     </div>
   <% end %>
-</div>
+</dl>

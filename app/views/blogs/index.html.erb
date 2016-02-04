@@ -1,4 +1,4 @@
-<div class='wrapper col-xs-10 col-xs-offset-1'>
+<div class='wrapper col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2'>
   <h2>My Blog</h2>
 
   <% if can? :manage, Blog %>
@@ -7,13 +7,13 @@
 
     <div class='row'>
       <% @blogs.each do |blog| %>
-        <div class='col-md-12 col-lg-12'>
-          <h3><%= blog.title %></h3>
-          <h4><%= blog.post %></h4>
+        <dl class='col-md-8 col-md-offset-2'>
+          <dt><%= blog.title %></dt>
+          <dd><%= blog.post %></dd>
           <%= link_to blog, class: 'col-xs-offset-9 col-sm-offset-10 label label-default' do %>
             <span><%= (blog.post_date).to_formatted_s(:rfc822) %></span>
           <% end %>
-        </div>
+        </dl>
       <% end %>
     </div>
 </div>
