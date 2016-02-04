@@ -16,3 +16,5 @@ photo_list = [
 photo_list.each do |image, text|
 Photo.create( image: image, text: text)
 end
+
+User.create(name: 'David', admin: true, email: 'david@soliskit.com', password: 'Lqwerty1', password_confirmation: 'Lqwerty1')
