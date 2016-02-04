@@ -1,8 +1,10 @@
 <div class='wrapper col-xs-10 col-xs-offset-1'>
   <h2><%= @photo.text %></h2>
   <%=  image_tag @photo.image, class: 'img-responsive' %><br>
-  <div class='btn-group'>
-  <%= link_to 'Edit', edit_photo_path(@photo), class:'col-sm-offset-2 btn btn-default' %>
-  <%= link_to 'Back', photos_path, class:'col-sm-offset-2 btn btn-default' %>
-  </div>
+  <% if can? :manage, Photo %>
+    <div class='btn-group'>
+      <%= link_to 'Edit', edit_photo_path(@photo), class:'col-sm-offset-2 btn btn-default' %>
+      <%= link_to 'Back', photos_path, class:'col-sm-offset-2 btn btn-default' %>
+    </div>
+  <% end %>
 </div>

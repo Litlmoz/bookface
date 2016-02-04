@@ -18,9 +18,10 @@
               </div>
             <% end %>
           </div>
-          <%= link_to 'Upload Photo', new_photo_path, class: 'col-sm-offset-2 btn btn-success' %>
+          <% if can? :manage, Photo %>
+            <%= link_to 'Upload Photo', new_photo_path, class: 'col-sm-offset-2 btn btn-success' %>
+          <% end %>
         </div>
-        <%= yield %>
     </section>
   </body>
 </html>

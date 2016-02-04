@@ -2,8 +2,10 @@
   <h2><%= @blog.title %></h2>
   <h3><%= @blog.post %></h3>
   <%= (@blog.post_date).to_formatted_s(:rfc822) %><br>
-  <div class='btn-group'>
-    <%= link_to 'Edit', edit_blog_path(@blog), class:'col-sm btn btn-default' %>
-    <%= link_to 'Back', blogs_path, class:'col-sm btn btn-default' %>
-  </div>
+  <% if can? :manage, Blog %>
+    <div class='btn-group'>
+      <%= link_to 'Edit', edit_blog_path(@blog), class:'col-sm btn btn-default' %>
+      <%= link_to 'Back', blogs_path, class:'col-sm btn btn-default' %>
+    </div>
+  <% end %>
 </div>
