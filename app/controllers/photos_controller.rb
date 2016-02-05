@@ -1,5 +1,6 @@
 class PhotosController < ApplicationController
   load_and_authorize_resource
+  before_action :format_caption, only: :create
   before_action :set_photo, only: [:show, :edit, :update, :destroy]
 
   # GET /photos
@@ -66,6 +67,10 @@ class PhotosController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_photo
       @photo = Photo.find(params[:id])
+    end
+
+    def format_caption
+      params[:photo][:text] = params[:photo][:text].strip.titleize
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

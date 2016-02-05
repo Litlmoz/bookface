@@ -11,11 +11,11 @@ photo_list = [
   ['https://s3-us-west-1.amazonaws.com/soliskit/4-30-15.jpg', 'Mom touring SF'],
   ['https://s3-us-west-1.amazonaws.com/soliskit/4-11-15.jpg', "Market Street Expo"],
   ['https://s3-us-west-1.amazonaws.com/soliskit/10-8-15_1.jpg', 'Mayan Temple'],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/10-8-15_2.jpg', 'Copan Forest'],
   ['https://s3-us-west-1.amazonaws.com/soliskit/10-7-15.jpg', 'Roadtrip up to Copan'],
   ['https://s3-us-west-1.amazonaws.com/soliskit/9-25-15.jpg', 'Future of onlinebanking'],
   ['https://s3-us-west-1.amazonaws.com/soliskit/9-5-15.jpg', 'Stanislaus Backcountry trip'],
   ['https://s3-us-west-1.amazonaws.com/soliskit/7-11-15.jpg', 'Washington Square Park']
+  # ['https://s3-us-west-1.amazonaws.com/soliskit/10-8-15_2.jpg', 'Copan Forest'],
 ]
 
 photo_list.each do |image, text|
