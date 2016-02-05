@@ -134,7 +134,24 @@ PHOTOS
   a {
     display: block;
     overflow: hidden;
-    max-height: 184px;
+  }
+}
+
+@media only screen and (min-width : 480px) {
+  .thumbnail > a {
+    max-height: 133px;
+  }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 480px) {
+  .thumbnail > a {
+    max-height: 174px;
+  }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 768px) {
+  .thumbnail > a {
+    max-height: 237px;
   }
 }
 
