@@ -21,10 +21,6 @@ a:hover {
   color: #F35E3E;
 }
 
-h2 {
-  text-align: center;
-}
-
 dd, dt {
   line-height: 1.6;
 }
@@ -36,82 +32,6 @@ dd, dt {
   border-radius: 100%;
   background-color: white;
 }
-
-.thumbnail {
-  margin-bottom: 30px;
-}
-
-.thumbnail .caption {
-  margin-top: 4px
-}
-
-.photo-rows {
-  margin: 0;
-}
-
-/********************************
-HOMEPAGE
-*********************************/
-#homepage-photo {
-  min-width: 800px;
-  width: 100%;
-  top: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-#homepage {
-  background-color: #15131a;
-}
-
-#homepage+footer {
-  position: fixed;
-  bottom: 0;
-}
-/********************************
-ABOUT ME
-*********************************/
-
-.contact-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.contact-icon-group {
-  margin: 20px auto 20px auto;
-}
-
-.contact-info {
-  list-style: none;
-}
-
-.contact-info a {
-  color: white;
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
-}
-
-.contact-info a:hover {
-  text-decoration: none;
-  color: #F35E3E;
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
-}
-
-.contact-info li.mail a { background-image: url(<%= asset_path 'contact-icon/mail.png' %>) }
-
-.contact-info li.git a { background-image: url(<%= asset_path 'social-icon/git_hub_black.png' %>) }
-
-.contact-info li.phone a { background-image: url(<%= asset_path 'contact-icon/phone.png' %>) }
 
 /********************************
 HEADER
@@ -151,4 +71,71 @@ FOOTER
   width: 20px;
   height: 20px;
   margin: 5px 5px;
+}
+
+/********************************
+HOMEPAGE
+*********************************/
+#homepage-photo {
+  min-width: 800px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#homepage {
+  background-color: #15131a;
+}
+
+#homepage+footer {
+  position: fixed;
+  bottom: 0;
+}
+/********************************
+ABOUT ME
+*********************************/
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-icon-group {
+  margin: 20px auto 20px auto;
+}
+
+.contact-info {
+  list-style: none;
+}
+
+.contact-info li h5 {
+  font-size: 1.3em;
+  [class^="icon-"], [class*=" icon-"] {
+  }
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-info a:hover {
+  color: #F35E3E;
+}
+
+/********************************
+PHOTOS
+*********************************/
+.thumbnail {
+  margin-bottom: 30px;
+}
+
+.thumbnail .caption {
+  margin-top: 4px
+}
+
+.photo-rows {
+  margin: 0;
 }
