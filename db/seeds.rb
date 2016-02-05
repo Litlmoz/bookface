@@ -18,8 +18,8 @@ photo_list = [
   # ['https://s3-us-west-1.amazonaws.com/soliskit/10-8-15_2.jpg', 'Copan Forest'],
 ]
 
-photo_list.each do |image, text|
-Photo.create( image: image, text: text)
+photo_list.each do |image, caption|
+Photo.create( image: image, caption: caption)
 end
 
 User.create(name: 'David', admin: true, email: 'david@soliskit.com', password: 'Lqwerty1', password_confirmation: 'Lqwerty1')

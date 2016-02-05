@@ -70,11 +70,11 @@ class PhotosController < ApplicationController
     end
 
     def format_caption
-      params[:photo][:text] = params[:photo][:text].strip.titleize
+      params[:photo][:caption] = params[:photo][:caption].strip.titleize
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def photo_params
-      params.require(:photo).permit(:image, :text, :presentation_order)
+      params.require(:photo).permit(:image, :caption, :presentation_order)
     end
 end
