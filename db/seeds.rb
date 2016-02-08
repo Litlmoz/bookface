@@ -9,7 +9,7 @@ photo_list = [
   ['https://s3-us-west-1.amazonaws.com/soliskit/6-27-15.jpg', 'Dolores SF Pride 15'],
   ['https://s3-us-west-1.amazonaws.com/soliskit/6-20-15.jpg', 'The tree needed a hug'],
   ['https://s3-us-west-1.amazonaws.com/soliskit/4-30-15.jpg', 'Mom touring SF'],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/4-11-15.jpg', "Market Street Expo"],
+  # ['https://s3-us-west-1.amazonaws.com/soliskit/4-11-15.jpg', "Market Street Expo"],
   ['https://s3-us-west-1.amazonaws.com/soliskit/10-8-15_1.jpg', 'Mayan Temple'],
   ['https://s3-us-west-1.amazonaws.com/soliskit/10-7-15.jpg', 'Roadtrip up to Copan'],
   ['https://s3-us-west-1.amazonaws.com/soliskit/9-25-15.jpg', 'Future of onlinebanking'],
