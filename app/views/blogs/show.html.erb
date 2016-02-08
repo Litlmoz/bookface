@@ -1,6 +1,5 @@
 <div class='wrapper container col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-2'>
-<<<<<<< HEAD
-  <dl class='col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-2'>
+  <dl class='col-xs-12 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-2'>
     <dt>
       <h3 class='text-center'>
         <%= @blog.title %>
@@ -14,16 +13,8 @@
         <span><%= (@blog.post_date).to_formatted_s(:rfc822) %></span>
       <% end %>
     </dd>
-=======
-  <dl class='col-xs-12 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-2'>
-    <dt><h3 class='text-center'><%= @blog.title %></h3></dt>
-    <dd><%= @blog.post %></dd><br>
-    <dd class='pull-right'><%= (@blog.post_date).to_formatted_s(:rfc822) %></dd>
->>>>>>> origin/master
     <% if can? :manage, Blog %>
-      <div class='btn-group'>
-        <%= link_to 'Edit', edit_blog_path(@blog), class:'col-sm btn btn-default' %>
-      </div>
+      <%= link_to 'Edit', edit_blog_path(@blog), class:'col-sm btn btn-default' %>
     <% end %>
   </dl>
 </div>
