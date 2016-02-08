@@ -12,7 +12,7 @@
         <h1 a ><%= link_to 'D/\VID', root_path %></h1></a>
         <h4 a><%= link_to 'a brief about me', page_about_path %></h4></a>
         <h4 a><%= link_to 'photography', photos_path %></h4>
-        <h4 a><%= link_to 'blog', blogs_path %></h4>
+        <!-- link_to 'blog', blogs_path -->
         <% if user_signed_in? %>
           <h4 a><%= link_to "logout", destroy_user_session_path, :method => :delete %></h4>
         <% end %>
