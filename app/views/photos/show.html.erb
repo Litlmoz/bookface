@@ -2,8 +2,8 @@
   <br>
   <%= image_tag @photo.image, class: 'img-responsive' %>
   <br>
-  <div class='caption text-center'>
-    <%= @photo.text %>
+  <div id='show_photo' class='text-center'>
+    <%= @photo.caption %>
   </div>
   <% if can? :manage, Photo %>
     <div class='btn-group'>

@@ -1,5 +1,6 @@
 class PhotosController < ApplicationController
   load_and_authorize_resource
+  before_action :format_caption, only: :create
   before_action :set_photo, only: [:show, :edit, :update, :destroy]
 
   # GET /photos
@@ -68,8 +69,12 @@ class PhotosController < ApplicationController
       @photo = Photo.find(params[:id])
     end
 
+    def format_caption
+      params[:photo][:caption] = params[:photo][:caption].strip.titleize
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def photo_params
-      params.require(:photo).permit(:image, :text, :presentation_order)
+      params.require(:photo).permit(:image, :caption, :presentation_order)
     end
 end

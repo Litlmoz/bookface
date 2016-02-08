@@ -140,6 +140,29 @@ PHOTOS
 *********************************/
 .thumbnail {
   margin-bottom: 30px;
+  overflow: hidden;
+  a {
+    display: block;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width : 480px) {
+  .thumbnail > a {
+    max-height: 133px;
+  }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 480px) {
+  .thumbnail > a {
+    max-height: 174px;
+  }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 768px) {
+  .thumbnail > a {
+    max-height: 237px;
+  }
 }
 
 .thumbnail .caption {
@@ -148,4 +171,8 @@ PHOTOS
 
 .photo-rows {
   margin: 0;
+}
+
+#show_photo {
+  padding-bottom: 10px;
 }
