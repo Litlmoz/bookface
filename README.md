@@ -1,5 +1,5 @@
+[![Build Status](https://travis-ci.org/Litlmoz/soliskit.svg?branch=master)](https://travis-ci.org/Litlmoz/soliskit)
 == My Personal Site
-
 Ruby 2.2.3
 
 Bundle edge Rails instead
