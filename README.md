@@ -21,9 +21,21 @@ Use Devise as authentication database
 ```
 gem 'devise', '>= 3.5.6'
 ```
-CanCan is an authorization library for Ruby on Rails
+Run initializer which describes ALL of Devise's configuration options
+```
+rails generate devise:install
+```
+Add Devise to any of your models using the generator
+```
+rails generate devise MODEL
+```
+CanCanCan is an authorization library for Ruby on Rails
 ```
 gem 'cancancan', '>= 1.10'
+```
+Run generator for creating Ability class
+```
+rails g cancan:ability
 ```
 Allows mocking and stubbing of methods on real (non-mock) classes
 ```
