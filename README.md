@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/Litlmoz/soliskit.svg?branch=master)](https://travis-ci.org/Litlmoz/soliskit)
-== My Personal Site
+## My Personal Website [![Build Status](https://travis-ci.org/Litlmoz/soliskit.svg?branch=master)](https://travis-ci.org/Litlmoz/soliskit)
+It is powered by Ruby on Rails. Follow the instructions below to install the necessary dependencies. I have opted for Postgres database and Bootstrap CSS.
+
 Ruby 2.2.3
 
 Bundle edge Rails instead
@@ -15,7 +16,7 @@ Replaces the need for plugins, and ensures that Rails 4 is optimally configured 
 ```
 gem 'rails_12factor'
 ```
-#### User Account
+#### User Account System
 Use Devise as authentication database
 ```
 gem 'devise', '>= 3.5.6'
@@ -50,3 +51,8 @@ Loads environment variables from .env
 ```
 gem 'dotenv-rails', '>= 2.1.0'
 ```
+#### Contact Info:
+David Solis  
+david@soliskit.com  
++1 (415) 244-7263  
+soliskit.com
