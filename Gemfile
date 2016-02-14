@@ -22,6 +22,8 @@ gem 'enum_help'
 gem 'pg', '>= 0.15'
 # Access .env file before starting app
 gem 'dotenv-rails', groups: [:development, :test]
+# Allows mocking and stubbing of methods on real (non-mock) classes
+gem 'mocha'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 5.0'
