@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  image: MyString
-  text: MyString
+photo_1:
+  image: photo_1
+  caption: MyString
   presentation_order: 2
 
-two:
-  image: MyString
-  text: MyString
+photo_2:
+  image: photo_2
+  caption: MyString
   presentation_order: 5

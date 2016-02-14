@@ -2,7 +2,7 @@ require 'test_helper'
 
 class BlogsControllerTest < ActionController::TestCase
   setup do
-    @blog = blogs(:one)
+    @blog = blogs(:post_1)
   end
 
   test "should get index" do
