@@ -23,7 +23,7 @@ end
 User.create( name: 'David', admin: true, email: 'david@soliskit.com', password: ENV['BLOG_PASSWORD'])
 
 blog_post = [
-  [ "Third times the charm",
+  [ "Third time's the charm",
     "Over the last five years, I have tried and failed to learn to code twice. The first attempt was the summer after graduating from UCR with my BA in History. My attempt to learn HTML, CSS, and JavaScript at the same time lacked focus and left me feeling disappointed and defeated by the end of the summer.
 
     Determined to establish a career in technology, I began working at Apple; first as a sales trainer and soon after a technical support trainer. Two years later I made another attempt to learn, this time leveraging my new skills. I began by focusing on one language, Ruby, and completed the course work by night as often as my schedule would permit. However, nothing stuck because it was so infrequent.
