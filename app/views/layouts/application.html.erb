@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>David Solis</title>
+    <% if @header %>
+      <title>David Solis | <%= @header %></title>
+    <% else %>
+      <title>David Solis</title>
+    <% end %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
     <body>
-      <header>
-        <h1 a ><%= link_to 'D/\VID', root_path %></h1></a>
-        <h4 a><%= link_to 'a brief about me', page_about_path %></h4></a>
-        <h4 a><%= link_to 'photography', photos_path %></h4></a>
-        <h4 a><%= link_to 'blog', blogs_path %></h4></a>
+      <header class='nav-links'>
+        <h1><%= link_to 'D/\VID', root_path %></h1>
+        <h4><%= link_to 'a brief about me', page_about_path %></h4>
+        <h4><%= link_to 'photography', photos_path %></h4>
+        <h4><%= link_to 'blog', blogs_path %></h4>
         <% if user_signed_in? %>
-          <h4 a><%= link_to "logout", destroy_user_session_path, :method => :delete %></h4></a>
+          <h4><%= link_to "logout", destroy_user_session_path, :method => :delete %></h4>
         <% end %>
-        <br>
       </header>
+      <% if @wrapper %>
+        <div class='wrapper container col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-2'>
+          <% if @header %>
+            <h1 class='text-center'><%= @header %></h1>
+          <% end %>
+          <%= yield %>
+        </div>
+      <% else %>
       <%= yield %>
+      <% end %>
       <footer class='visible-xs visible-md mobile-footer col-xs-4 col-xs-offset-4'>
         <a href="https://twitter.com/davidsoliskit"><%= image_tag 'social-icon/twitter_logo_white.png', class: :'social-icon' %></a>
         <a href="https://davidsoliskit.tumblr.com"><%= image_tag 'social-icon/tumblr_logo_white_transparent.png', class: :"social-icon" %></a>
