@@ -1,10 +1,11 @@
+@import "bootstrap/variables";
+
 /********************************
 GENERAL
 *********************************/
 body {
-  font-family: 'Helvetica Neue', Helvetica, Ariel, sans-serif;
   background-color: #3B2E40;
-  color: white;
+  color: $body-bg;
 }
 
 .wrapper {
@@ -13,7 +14,6 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 a:hover {
@@ -34,13 +34,13 @@ dd, dt {
 }
 
 /********************************
-HEADER
+Nav Links
 *********************************/
-header {
+.nav-links {
   padding: 20px 41.984375px;
 }
 
-header * {
+.nav-links * {
   color: black;
   text-decoration: none;
 }
@@ -173,6 +173,13 @@ PHOTOS
   margin: 0;
 }
 
+.photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+
 #show_photo {
-  padding-bottom: 10px;
+  padding: 10px 0px;
 }
