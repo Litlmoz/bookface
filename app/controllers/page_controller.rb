@@ -5,6 +5,7 @@ class PageController < ApplicationController
   end
 
   def about
+    @wrapper = ''
   end
 
 end
