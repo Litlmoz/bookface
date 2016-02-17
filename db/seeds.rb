@@ -20,7 +20,7 @@ photo_list.each do |image, caption, presentation_order|
   Photo.create( image: image, caption: caption, presentation_order: presentation_order)
 end
 
-User.create( name: 'David', admin: true, email: 'david@soliskit.com', password: 'Lqwerty1')
+User.create( name: 'David', admin: true, email: 'david@soliskit.com', password: ENV['BLOG_PASSWORD'])
 
 blog_post = [
   [ "Third times the charm",
