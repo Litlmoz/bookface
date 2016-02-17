@@ -6,12 +6,14 @@ class PhotosController < ApplicationController
   # GET /photos
   # GET /photos.json
   def index
-    @photos = Photo.all
+    @photos = Photo.all.order('presentation_order')
+    @wrapper = @photos
   end
 
   # GET /photos/1
   # GET /photos/1.json
   def show
+    @wrapper = @photo
   end
 
   # GET /photos/new
