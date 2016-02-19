@@ -1,4 +1,5 @@
-## My Personal Website [![Build Status](https://travis-ci.org/Litlmoz/soliskit.svg?branch=master)](https://travis-ci.org/Litlmoz/soliskit)
+## My Site [![Build Status](https://travis-ci.org/Litlmoz/soliskit.svg?branch=master)](https://travis-ci.org/Litlmoz/soliskit)
+
 It's powered by Ruby on Rails. Follow the instructions below to install the necessary dependencies. I have opted for Postgres database and Bootstrap CSS.
 
 Ruby 2.2.3
