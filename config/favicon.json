@@ -9,12 +9,12 @@
         ],
         "windows": {
             "picture_aspect": "no_change",
-            "background_color": "#da532c",
+            "background_color": "#6173f4",
             "on_conflict": "override"
         },
         "android_chrome": {
             "picture_aspect": "no_change",
-            "theme_color": "#ffffff",
+            "theme_color": "#3b2e40",
             "manifest": {
                 "name": "David Solis",
                 "display": "browser",
@@ -25,7 +25,7 @@
         },
         "safari_pinned_tab": {
             "picture_aspect": "black_and_white",
-            "threshold": 46.875,
+            "threshold": 26.875,
             "theme_color": "#3b2e40"
         }
     },
