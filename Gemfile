@@ -24,6 +24,10 @@ gem 'pg', '>= 0.15'
 gem 'dotenv-rails', groups: [:development, :test]
 # Allows mocking and stubbing of methods on real (non-mock) classes
 gem 'mocha', '>= 1.1'
+# Setup favicon icons
+group :development do
+  gem 'rails_real_favicon'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 5.0'
