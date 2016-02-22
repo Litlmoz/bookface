@@ -9,15 +9,15 @@
         ],
         "windows": {
             "picture_aspect": "no_change",
-            "background_color": "#6173f4",
+            "background_color": "#2d89ef",
             "on_conflict": "override"
         },
         "android_chrome": {
-            "picture_aspect": "no_change",
+            "picture_aspect": "shadow",
             "theme_color": "#3b2e40",
             "manifest": {
                 "name": "David Solis",
-                "display": "browser",
+                "display": "standalone",
                 "orientation": "not_set",
                 "on_conflict": "override",
                 "declared": true
@@ -25,7 +25,7 @@
         },
         "safari_pinned_tab": {
             "picture_aspect": "black_and_white",
-            "threshold": 26.875,
+            "threshold": 39.53125,
             "theme_color": "#3b2e40"
         }
     },
