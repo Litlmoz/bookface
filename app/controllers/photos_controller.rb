@@ -7,7 +7,6 @@ class PhotosController < ApplicationController
   # GET /photos.json
   def index
     @photos = Photo.all.order('presentation_order')
-    @wrapper = @photos
   end
 
   # GET /photos/1

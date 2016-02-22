@@ -6,14 +6,12 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all.order('post_date DESC')
-    @wrapper = @blogs
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
     @header = @blog.title
-    @wrapper = @blog
   end
 
   # GET /blogs/new
