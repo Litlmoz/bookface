@@ -1,47 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <% if @header %>
-      <title>David Solis | <%= @header %></title>
-    <% else %>
-      <title>David Solis</title>
-    <% end %>
-    <%= render 'favicon' %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="r_NYeVh-ElZ-3JwfqfrkSs_sFA8kOEsqT04cvxxb1ks" />
-  </head>
-    <body>
-      <header class='nav-links'>
-        <h1><%= link_to 'D/\VID', root_path %></h1>
-        <h4><%= link_to 'a brief about me', page_about_path %></h4>
-        <h4><%= link_to 'photography', photos_path %></h4>
-        <h4><%= link_to 'blog', blogs_path %></h4>
-        <% if user_signed_in? %>
-          <h4><%= link_to "logout", destroy_user_session_path, :method => :delete %></h4>
-        <% end %>
-      </header>
-      <% if @wrapper %>
-        <div class='wrapper container col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-2'>
-          <% if @header %>
-            <h1 class='text-center'><%= @header %></h1>
-          <% end %>
-          <%= yield %>
-        </div>
-      <% else %>
-      <%= yield %>
-      <% end %>
-      <footer class='visible-xs visible-md mobile-footer col-xs-4 col-xs-offset-4'>
-        <a href="https://twitter.com/davidsoliskit"><%= image_tag 'social-icon/twitter.svg', class: :'social-icon' %></a>
-        <a href="https://davidsoliskit.tumblr.com"><%= image_tag 'social-icon/tumblr.svg', class: :"social-icon" %></a>
-        <p>&copy; <%= (Time.now).year %> David Solis</p>
-      </footer>
-      <footer class='hidden-xs hidden-md desktop-footer'>
-        <a href="https://twitter.com/davidsoliskit"><%= image_tag 'social-icon/twitter.svg', class: :'social-icon' %></a>
-        <a href="https://davidsoliskit.tumblr.com"><%= image_tag 'social-icon/tumblr.svg', class: :"social-icon" %></a>
-        <p>&copy; <%= Date.today.year %> David Solis</p>
-      </footer>
-    </body>
+<head>
+  <% if @header %>
+  <title>David Solis | <%= @header %></title>
+  <% else %>
+  <title>David Solis</title>
+  <% end %>
+  <%= render 'favicon' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="r_NYeVh-ElZ-3JwfqfrkSs_sFA8kOEsqT04cvxxb1ks" />
+</head>
+<body>
+  <%= render 'nav' %>
+    <%= yield %>
+  <footer class='footer'>
+    <a href="https://twitter.com/davidsoliskit"><%= image_tag 'social-icon/twitter.svg', class: :'social-icon' %></a>
+    <a href="https://davidsoliskit.tumblr.com"><%= image_tag 'social-icon/tumblr.svg', class: :"social-icon" %></a>
+    <p>&copy; <%= (Time.now).year %> David Solis</p>
+  </footer>
+</body>
 </html>
