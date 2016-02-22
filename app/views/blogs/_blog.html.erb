@@ -1,0 +1,23 @@
+<section class='wrapper'>
+  <div class='container-fluid'>
+    <%= image_tag 'quil.png', class: :'header-photo', alt: 'quil', id:'blog' %>
+
+    <div class='row col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3'>
+      <% @blogs.each do |blog| %>
+        <dl>
+          <dt>
+            <h3 class='text-center'>
+              <%= blog.title %>
+            </h3>
+          </dt>
+          <dd>
+            <%= simple_format(blog.post) %>
+          </dd>
+          <dd>
+            <span class="label label-default"><%= (blog.post_date).to_formatted_s(:rfc822) %></span>
+          </dd>
+        </dl>
+      <% end %>
+    </div>
+  </div>
+</section>
