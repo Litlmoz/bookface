@@ -7,16 +7,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <a class='navbar-brand' href='#'>D/\VID</a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-6">
       <ul class="nav navbar-nav">
         <% if user_signed_in? %>
           <li><%= link_to "logout", destroy_user_session_path, :method => :delete %></li>
         <% end %>
-        <li><a href="#">D/\VID</a></li>
         <li><a href="#about">about</a></li>
         <li><a href="#blog">blog</a></li>
         <li><a href="#photos">photos</a></li>
+      </ul>
+      <ul class='nav navbar-nav navbar-right'>
+        <li><%= link_to 'peaking software', 'https://www.facebook.com/Peaking-Software-193843850813732/timeline', target: :'_blank' %></li>
       </ul>
     </div>
   </div>
