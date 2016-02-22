@@ -1,11 +1,12 @@
 class PageController < ApplicationController
   skip_authorization_check
 
-  def index
+  def about
   end
 
-  def about
-    @wrapper = ''
+  def index
+    @blogs = Blog.all.order('post_date DESC')
+    @photos = Photo.all.order('presentation_order')
   end
 
 end
