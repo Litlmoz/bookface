@@ -1,0 +1,23 @@
+<section class='wrapper'>
+  <div class='container-fluid'>
+    <%= image_tag 'camera.png', class: :'header-photo', alt: 'camera', id:'photos' %>
+
+    <div class='row photo-rows'>
+      <% @photos.each do |photo| %>
+      <div class='col-sm-6 col-md-4'>
+        <div class='thumbnail'>
+          <%= link_to photo do %>
+          <%= image_tag photo.image %>
+          <% end %>
+          <div class='caption text-center'>
+            <%= photo.caption %>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  <div>
+  <div class='container-fluid'>
+    <%= image_tag 'peaking_logo.png', class: :'img-responsive header-photo', alt: 'peaking_software' %>
+  </div>
+</section>
