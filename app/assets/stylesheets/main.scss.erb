@@ -46,13 +46,35 @@ ul li p {
 /********************************
 Nav Links
 *********************************/
-.nav-links {
-  padding: 20px 41.984375px;
+.navbar-default {
+  background-color: #3B2E40;
+  color: $body-bg;
+  border-color: rgba(240, 248, 255, 0);
 }
 
-.nav-links * {
+#my_name {
+  top: 50px;
+  left: 20px;
+  position: absolute;
+  z-index: 1;
   color: black;
+}
+
+.nav-links h1 * {
+  color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
   text-decoration: none;
+  color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, {
+  color: #F35E3E;
 }
 
 /********************************
