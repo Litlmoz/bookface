@@ -1,5 +1,7 @@
 @import "bootstrap/variables";
 
+$link-hover-color: #F35E3E;
+
 /********************************
 GENERAL
 *********************************/
@@ -18,7 +20,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #F35E3E;
+  color: $link-hover-color;
 }
 
 dd, dt {
@@ -45,7 +47,7 @@ Nav Links
 
 .navbar-default .navbar-nav > li > a {
   text-decoration: none;
-  color: white;
+  color: $body-bg;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -53,7 +55,15 @@ Nav Links
 }
 
 .navbar-default .navbar-nav > li > a:hover, {
-  color: #F35E3E;
+  color: $link-hover-color;
+}
+
+.navbar-default .navbar-brand {
+  color: $body-bg;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: $link-hover-color;
 }
 
 /********************************
@@ -87,6 +97,12 @@ ABOUT ME
 
 .contact-info {
   list-style: none;
+}
+
+.contact-info li h5 {
+  font-size: 1.3em;
+  [class^="icon-"], [class*=" icon-"] {
+  }
 }
 
 ul li a p {
