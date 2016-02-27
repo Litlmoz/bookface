@@ -1,19 +1,16 @@
 photo_list = [
   ['https://s3-us-west-1.amazonaws.com/soliskit/1-11-15.jpg', 'Alamo Square', 4],
   ['https://s3-us-west-1.amazonaws.com/soliskit/10-10-14.jpg', 'SF Fog from Coit', 3],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/2-21-14.jpg', 'Mission Peak Sunset', 2],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/7-19-13.jpg', 'Breakfast with Mr Ethan', 9],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/10-27-12.jpg', 'First Car', 12],
+  ['https://s3-us-west-1.amazonaws.com/soliskit/2-21-14.jpg', 'Mission Peak Sunset', 8],
+  ['https://s3-us-west-1.amazonaws.com/soliskit/7-19-13.jpg', 'Breakfast with Mr Ethan', 10],
+  ['https://s3-us-west-1.amazonaws.com/soliskit/10-27-12.jpg', 'Sunnyvale in the fall', 12],
   ['https://s3-us-west-1.amazonaws.com/soliskit/7-6-12.jpg', 'Breakroom Photo', 11],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/6-30-15.jpg', 'Friends Sketch', 1],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/6-27-15.jpg', 'Dolores SF Pride 15', 14],
+  ['https://s3-us-west-1.amazonaws.com/soliskit/6-30-15.jpg', 'Friends Sketch', 5],
   ['https://s3-us-west-1.amazonaws.com/soliskit/6-20-15.jpg', 'The tree needed a hug'],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/4-30-15.jpg', 'Mom visiting SF', 10],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/10-8-15_1.jpg', 'Mayan Temple', 6],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/10-7-15.jpg', 'Roadtrip up to Copan', 5],
+  ['https://s3-us-west-1.amazonaws.com/soliskit/10-8-15.jpg', 'Mayan Temple', 6],
   ['https://s3-us-west-1.amazonaws.com/soliskit/9-25-15.jpg', 'Future of onlinebanking', 7],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/9-5-15.jpg', 'Stanislaus Backcountry', 8],
-  ['https://s3-us-west-1.amazonaws.com/soliskit/7-11-15.jpg', 'Washington Square Park', 13]
+  ['https://s3-us-west-1.amazonaws.com/soliskit/9-5-15.jpg', 'Stanislaus Backcountry', 2],
+  ['https://s3-us-west-1.amazonaws.com/soliskit/2-20-16.jpg', 'Point Reyes', 1]
 ]
 
 photo_list.each do |image, caption, presentation_order|
