@@ -8,11 +8,13 @@
     <div class='row'>
       <% @photos.each do |photo| %>
       <div class='col-sm-6 col-md-4'>
-        <%= link_to photo, class:'thumbnail' do %>
-          <%= image_tag photo.image %>
-        <% end %>
-        <div class='caption text-center'>
-          <h3><%= photo.caption %></h3>
+        <div class='thumbnail'>
+          <%= link_to photo do %>
+            <%= image_tag photo.image %>
+          <% end %>
+          <div class='caption'>
+            <p style='margin: 0 !important;'><%= photo.caption %></p>
+          </div>
         </div>
       </div>
       <% end %>
