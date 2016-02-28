@@ -53,8 +53,6 @@ Nav Links
   color: $body-bg;
   float: left;
   font-size: 16px;
-  height: 50px;
-  line-height: 20px;
   padding: 15px;
   text-decoration: none;
 }
@@ -69,6 +67,18 @@ Nav Links
 
 .navbar-default .navbar-brand:hover {
   color: $link-hover-color;
+}
+
+@media (max-width: $screen-xs-max) {
+  #nav {
+    padding: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .peaking {
+    display: none !important;
+  }
 }
 
 /********************************

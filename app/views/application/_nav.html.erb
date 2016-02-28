@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
+  <div id='nav' class="container-fluid">
     <div class="navbar">
       <%= link_to 'D/\VID', root_path, class:'navbar-brand' %>
       <% if user_signed_in? %>
@@ -8,7 +8,7 @@
       <%= link_to 'about', root_url << '#about', class:'nav-links' %>
       <%= link_to 'blog', root_url << '#blog', class:'nav-links' %>
       <%= link_to 'photos', root_url << '#photos', class:'nav-links' %>
-      <%= link_to 'peaking', 'https://www.facebook.com/Peaking-Software-193843850813732/timeline', target: :'_blank', class:'nav-links pull-right' %>
+      <%= link_to 'peaking', 'https://www.facebook.com/Peaking-Software-193843850813732/timeline', target: :'_blank', class:'nav-links pull-right peaking' %>
     </div>
   </div>
 </nav>
