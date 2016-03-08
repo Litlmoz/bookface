@@ -22,6 +22,8 @@ gem 'enum_help'
 gem 'pg', '>= 0.15'
 # Access .env file before starting app
 gem 'dotenv-rails', groups: [:development, :test]
+# Monitors applications with deep visibility and low overhead
+gem 'newrelic_rpm'
 # Allows mocking and stubbing of methods on real (non-mock) classes
 gem 'mocha', '>= 1.1'
 # Setup favicon icons
