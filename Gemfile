@@ -3,10 +3,14 @@ source 'https://rubygems.org'
 ruby '2.2.3'
 # Bundle edge Rails instead
 gem 'rails', '>= 4.2.5'
+# Declare job classes that can be run by a variety of queueing backends
+gem 'activejob', '>= 4.2.5.1'
 # Use Puma to run highly concurrent HTTP 1.1 server for Ruby/Rack applications
 gem 'puma', '>= 2.15.3'
 # Replaces the need for plugins, and ensures that Rails 4 is optimally configured for executing on Heroku.
-gem 'rails_12factor'
+gem 'rails_12factor', '>= 0.0.3', groups: [:production, :test]
+# https://github.com/heroku/rails_stdout_logging/issues/23
+# Conflict with Rails 4.2.6
 
 # Use Devise as authentication database
 gem 'devise', '>= 3.5.6'
