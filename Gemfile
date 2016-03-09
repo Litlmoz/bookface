@@ -2,15 +2,18 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 # Bundle edge Rails instead
-gem 'rails', '>= 4.2.5'
+gem 'rails', '~> 4.2.5'
 # Declare job classes that can be run by a variety of queueing backends
 gem 'activejob', '>= 4.2.5.1'
 # Use Puma to run highly concurrent HTTP 1.1 server for Ruby/Rack applications
 gem 'puma', '>= 2.15.3'
-# Replaces the need for plugins, and ensures that Rails 4 is optimally configured for executing on Heroku.
-gem 'rails_12factor', '>= 0.0.3', groups: [:production, :test]
-# https://github.com/heroku/rails_stdout_logging/issues/23
-# Conflict with Rails 4.2.6
+
+group :production do
+  # Replaces the need for plugins, and ensures that Rails 4 is optimally configured for executing on Heroku
+  # https://github.com/heroku/rails_stdout_logging/pull/22
+  # Conflict with Rails 4.2.6
+  gem 'rails_12factor'
+end
 
 # Use Devise as authentication database
 gem 'devise', '>= 3.5.6'
@@ -30,10 +33,6 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'newrelic_rpm'
 # Allows mocking and stubbing of methods on real (non-mock) classes
 gem 'mocha', '>= 1.1'
-# Setup favicon icons
-group :development do
-  gem 'rails_real_favicon'
-end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 5.0'
@@ -53,6 +52,8 @@ gem 'sdoc', '>= 0.4.0', group: :doc
 gem 'byebug', groups: [:development, :test]
 
 group :development do
+  # Setup favicon icons
+  gem 'rails_real_favicon'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '>= 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
