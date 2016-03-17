@@ -3,34 +3,35 @@ source 'https://rubygems.org'
 ruby '2.2.3'
 # Bundle edge Rails instead
 gem 'rails', '4.2.5'
-# Declare job classes that can be run by a variety of queueing backends
-gem 'activejob', '4.2.5'
+
 # Use Puma to run highly concurrent HTTP 1.1 server for Ruby/Rack applications
 gem 'puma', '~> 2.16'
 
-# Replaces the need for plugins, and ensures that Rails 4 is optimally configured for executing on Heroku
-# https://github.com/heroku/rails_stdout_logging/issues/23
-# Conflict with Rails 4.2.6
-gem 'rails_12factor', '0.0.3'
+# Use postgresql as the database for Active Record
+gem 'pg', '~> 0.18.4'
 
 # Use Devise as authentication database
 gem 'devise', '~> 3.5.6'
 # CanCan is an authorization library for Ruby on Rails
 gem 'cancancan', '~> 1.13.1'
 
+# Declare job classes that can be run by a variety of queueing backends
+gem 'activejob', '4.2.5'
 # Rails forms made easy
 gem 'simple_form'
 # This gem can help you work fine with Enum feather, I18n and simple_form
 gem 'enum_help'
+# Use Font Awesome icons
+gem 'font-awesome-rails'
 
-# Use postgresql as the database for Active Record
-gem 'pg', '~> 0.18.4'
-# Access .env file before starting app
-gem 'dotenv-rails', groups: [:development, :test]
 # Monitors applications with deep visibility and low overhead
 gem 'newrelic_rpm'
 # Allows mocking and stubbing of methods on real (non-mock) classes
 gem 'mocha', '~> 1.1'
+# Replaces the need for plugins, and ensures that Rails 4 is optimally configured for executing on Heroku
+# https://github.com/heroku/rails_stdout_logging/issues/23
+# Conflict with Rails 4.2.6
+gem 'rails_12factor'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.4'
@@ -46,8 +47,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.4.1'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.1', group: :doc
-# Call 'byebug' anywhere in the code to stop execution and get a debugger console
-gem 'byebug', groups: [:development, :test]
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
+  # Access .env file before starting app
+  gem 'dotenv-rails'
+end
 
 group :development do
   # Setup favicon icons
@@ -57,10 +62,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
-# Use ActiveModel has_secure_password
-  # gem 'bcrypt', '~> 3.1.7'
-# Use Capistrano for deployment
-  # gem 'capistrano-rails', group: :development
-# See https://github.com/rails/execjs#readme for more supported runtimes
-  # gem 'therubyracer', platforms: :ruby
