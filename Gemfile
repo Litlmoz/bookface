@@ -6,17 +6,12 @@ gem 'rails', '4.2.5'
 # Declare job classes that can be run by a variety of queueing backends
 gem 'activejob', '4.2.5'
 # Use Puma to run highly concurrent HTTP 1.1 server for Ruby/Rack applications
-gem 'puma', '3.0'
+gem 'puma', '~> 2.16'
 
-
-group :production do
 # Replaces the need for plugins, and ensures that Rails 4 is optimally configured for executing on Heroku
 # https://github.com/heroku/rails_stdout_logging/issues/23
 # Conflict with Rails 4.2.6
-  gem 'rails_12factor', '0.0.3'
-end
-# Sets Rails to log to stdout, prints SQL queries
-gem 'rails_stdout_logging', '0.0.3'
+gem 'rails_12factor', '0.0.3'
 
 # Use Devise as authentication database
 gem 'devise', '~> 3.5.6'
