@@ -8,7 +8,7 @@
   <% end %>
   <%= render 'favicon' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="r_NYeVh-ElZ-3JwfqfrkSs_sFA8kOEsqT04cvxxb1ks" />
@@ -19,5 +19,6 @@
   <footer class='footer'>
     <%= render 'footer' %>
   </footer>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>

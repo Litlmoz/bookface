@@ -1,27 +1,13 @@
 @import "bootstrap/variables";
 
 $link-hover-color: #F35E3E;
+$body-bg: rgb(51, 51, 51);
 
 /********************************
 GENERAL
 *********************************/
-body {
-  background-color: #3B2E40;
-  color: $body-bg;
-  padding-top: 53px;
-}
-
 .wrapper {
   background-color: rgba(97, 115, 244, 0.8);
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  color: $link-hover-color;
 }
 
 dd, dt {
@@ -40,45 +26,26 @@ dd, dt {
 /********************************
 Nav Links
 *********************************/
-.navbar-default {
-  background-color: #3B2E40;
-  border-color: rgba(240, 248, 255, 0);
-}
-
-.navbar {
-  margin: 0;
-}
-
-.nav-links {
+.navbar-default .navbar-header .navbar-brand {
   color: $body-bg;
-  float: left;
-  font-size: 16px;
-  padding: 15px;
-  text-decoration: none;
+  font-size: 30px;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover {
+  color: $link-hover-color;
+}
+
+::selection {
+  color: $link-hover-color;
+  background: 0;
+}
+
+.navbar-default .navbar-nav > li > a, {
+  color: $body-bg;
 }
 
 .navbar-default .navbar-nav > li > a:hover, {
   color: $link-hover-color;
-}
-
-.navbar-default .navbar-brand {
-  color: $body-bg;
-}
-
-.navbar-default .navbar-brand:hover {
-  color: $link-hover-color;
-}
-
-@media (max-width: $screen-xs-max) {
-  #nav {
-    padding: 0;
-  }
-}
-
-@media (max-width: 375px) {
-  .peaking {
-    display: none !important;
-  }
 }
 
 /********************************
@@ -89,7 +56,6 @@ FOOTER
   text-align: center;
   clear: both;
   padding-top: 20px;
-  color: white;
 }
 
 .social-icon {
@@ -132,22 +98,22 @@ ul li p {
 
 .contact-info a {
   text-decoration: none;
-  color: white;
+  color: $body-bg;
 }
 
 .contact-info a:hover {
-  color: #F35E3E;
+  color: $link-hover-color;
 }
 
 #blog-link {
   text-decoration: underline;
-  color: white;
+  color: $body-bg;
   font-weight: bold;
 }
 
 #blog-link:hover {
   text-decoration: underline;
-  color: #F35E3E;
+  color: $link-hover-color;
 }
 /********************************
 PHOTOS

@@ -11,7 +11,11 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
 //= require bootstrap
+//= require jquery_ujs
+//= require jquery.easing.min
+//= require jquery.fittext
+//= require turbolinks
+//= require wow.min
+
+//= require creative
