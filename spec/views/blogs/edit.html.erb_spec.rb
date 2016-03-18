@@ -20,7 +20,7 @@ RSpec.describe "blogs/edit", type: :view do
 
       assert_select "select#blog_post_date_2i option[selected]", "March"
 
-      assert_select "select#blog_post_date_3i option[selected]", "17"
+      assert_select "select#blog_post_date_3i option[selected]", "18"
       #
       assert_select "select#blog_post_date_1i option[selected]", "2016"
     end

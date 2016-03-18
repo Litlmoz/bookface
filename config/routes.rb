@@ -1,16 +1,22 @@
 Rails.application.routes.draw do
 
-  root to: 'page#index'
-
-  get 'page/about'
+  root :to => 'page#index'
 
   devise_scope :user do
+    authenticated :user do
+      root :to => 'blogs#new', as: :authenticated_root_url
+    end
     get 'login', to: 'devise/sessions#new', as: :login
+    get 'logout', to: 'devise/sessions#destroy', as: :logout
   end
 
-  devise_for :users
+  devise_for :users, controllers: {registrations: 'registrations'}
 
-  resources :photos, :blogs, :users
+  scope "/admin" do
+    resources :users
+  end
+
+  resources :photos, :blogs
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
