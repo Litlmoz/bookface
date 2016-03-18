@@ -8,18 +8,18 @@
         <%= link_to 'Upload Photo', new_photo_path, class: 'col-sm-offset-2 btn btn-success' %>
       <% end %>
 
-      <div class='row photo-rows'>
+      <div class='row'>
         <% @photos.each do |photo| %>
-          <div class='col-sm-6 col-md-4'>
-            <div class='thumbnail'>
-              <%= link_to photo do %>
-                <%= image_tag photo.image %>
-              <% end %>
-              <div class='caption text-center'>
-                <%= photo.caption %>
-              </div>
+        <div class='col-sm-6 col-md-4'>
+          <div class='thumbnail'>
+            <%= link_to photo do %>
+              <%= image_tag photo.image %>
+            <% end %>
+            <div class='caption'>
+              <p style='margin: 0 !important;'><%= photo.caption %></p>
             </div>
           </div>
+        </div>
         <% end %>
       </div>
     </section>

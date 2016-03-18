@@ -28,6 +28,8 @@ gem 'font-awesome-rails'
 gem 'newrelic_rpm'
 # Allows mocking and stubbing of methods on real (non-mock) classes
 gem 'mocha', '~> 1.1'
+# rspec-rails is a testing framework for 4.x
+gem 'rspec-rails', '~> 3.4', groups: [:development, :test]
 # Replaces the need for plugins, and ensures that Rails 4 is optimally configured for executing on Heroku
 # https://github.com/heroku/rails_stdout_logging/issues/23
 # Conflict with Rails 4.2.6
