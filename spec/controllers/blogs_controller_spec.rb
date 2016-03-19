@@ -24,7 +24,7 @@ RSpec.describe BlogsController, type: :controller do
   # Blog. As you add validations to Blog, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    {title: 'Blog Title', post: 'Content', post_date: '2016-02-15'}
+    {title: 'Blog Title', post: 'Content', post_date: '12-5-2017'}
   }
 
   let(:invalid_attributes) {

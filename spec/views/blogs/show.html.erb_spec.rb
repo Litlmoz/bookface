@@ -5,13 +5,13 @@ RSpec.describe "blogs/show", type: :view do
     @blog = assign(:blog, Blog.create!(
       :title => "Title",
       :post => "MyText",
-      :post_date => "2016-02-15"
+      :post_date => "12-5-2017"
     ))
   end
 
   it "renders attributes in <p>" do
     render
     expect(rendered).to match(/MyText/)
-    expect(rendered).to match(/15 Feb 2016/)
+    expect(rendered).to match(/12 May 2017/)
   end
 end
