@@ -33,7 +33,16 @@ RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.include Devise::TestHelpers, type: :controller
   config.include Devise::TestHelpers, type: :view
-  config.include Rails.application.routes.url_helpers
+
+  def login_admin
+    before(:each) do
+      @request.env["devise.mapping"] = Devise.mappings[:admin]
+      admin = User.create!(name: 'David', admin: true, email: 'david@google.com', password: 'Lqwerty1')
+      ability = Ability.new(admin)
+      assert ability.can?(:manage, :all)
+      sign_in :user, admin # sign_in(scope, resource)
+    end
+  end
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
