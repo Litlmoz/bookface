@@ -13,7 +13,8 @@
       My past work includes training and development for technical support teams at Apple before becoming a software developer.
     </dd>
     <dd>
-      Read my first blog <%= link_to 'post', '#blog-link', id:'blog-link' %> to find out more about me.
+      <!-- link_to('about', {controller: 'blogs', action: 'index', anchor: 'firstpost'} -->
+      Read my first blog <%= link_to 'post', "#{root_url}#firstpost", id:'blog-link' %> to find out more about me.
     </dd>
     <br>
     <dd>
