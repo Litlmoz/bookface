@@ -1,31 +1,14 @@
 @import "bootstrap/variables";
 
 $link-hover-color: #F35E3E;
+$text-color: rgb(51, 51, 51);
 
 /********************************
 GENERAL
 *********************************/
-body {
-  background-color: #3B2E40;
-  color: $body-bg;
-  padding-top: 53px;
-}
-
-.wrapper {
-  background-color: rgba(97, 115, 244, 0.8);
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  color: $link-hover-color;
-}
-
 dd, dt {
   line-height: 1.6;
+  font-size: 16px;
 }
 
 .header-photo {
@@ -34,51 +17,42 @@ dd, dt {
   max-width: 150px;
   height: auto;
   border-radius: 100%;
-  background: white;
+  background: #3B2E40;
+}
+.wrapper {
+  background-color: $gray-lighter;
 }
 
 /********************************
 Nav Links
 *********************************/
-.navbar-default {
-  background-color: #3B2E40;
-  border-color: rgba(240, 248, 255, 0);
+#about {
+  padding: 0;
 }
 
-.navbar {
-  margin: 0;
+#blog {
+  padding: 0;
 }
 
-.nav-links {
-  color: $body-bg;
-  float: left;
-  font-size: 16px;
-  padding: 15px;
-  text-decoration: none;
+#photos {
+  padding: 0;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+  color: $text-color !important;
+  font-size: 30px;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover {
+  color: $link-hover-color !important;
+}
+
+.navbar-default .navbar-nav > li > a, {
+  color: $text-color !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover, {
-  color: $link-hover-color;
-}
-
-.navbar-default .navbar-brand {
-  color: $body-bg;
-}
-
-.navbar-default .navbar-brand:hover {
-  color: $link-hover-color;
-}
-
-@media (max-width: $screen-xs-max) {
-  #nav {
-    padding: 0;
-  }
-}
-
-@media (max-width: 375px) {
-  .peaking {
-    display: none !important;
-  }
+  color: $link-hover-color !important;
 }
 
 /********************************
@@ -89,7 +63,6 @@ FOOTER
   text-align: center;
   clear: both;
   padding-top: 20px;
-  color: white;
 }
 
 .social-icon {
@@ -132,22 +105,22 @@ ul li p {
 
 .contact-info a {
   text-decoration: none;
-  color: white;
+  color: $text-color !important;
 }
 
 .contact-info a:hover {
-  color: #F35E3E;
+  color: $link-hover-color !important;
 }
 
 #blog-link {
   text-decoration: underline;
-  color: white;
+  color: $text-color !important;
   font-weight: bold;
 }
 
 #blog-link:hover {
   text-decoration: underline;
-  color: #F35E3E;
+  color: $link-hover-color !important;
 }
 /********************************
 PHOTOS
