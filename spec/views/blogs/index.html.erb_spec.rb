@@ -20,6 +20,6 @@ RSpec.describe "blogs/index", type: :view do
     render
     assert_select "dt>h3", :text => "Title".to_s, :count => 2
     assert_select "dd>p", :text => "MyText".to_s, :count => 2
-    assert_select "a>span", :text => "12 May 2017".to_s, :count => 2
+    assert_select "dd>blockquote", :text => "12 May 2017".to_s, :count => 2
   end
 end
