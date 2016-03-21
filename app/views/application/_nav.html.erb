@@ -14,24 +14,35 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li>
-                <%= link_to 'about', '#about', class:'page-scroll' %>
-              </li>
+              <% if current_page? root_url %>
+                <li>
+                  <%= link_to 'about', '#about', class:'page-scroll' %>
+                </li>
+                <li>
+                  <%= link_to 'blog', '#blog', class:'page-scroll' %>
+                </li>
+                <li>
+                  <%= link_to 'photos', '#photos', class:'page-scroll' %>
+                </li>
+              <% else %>
+                <li>
+                  <%= link_to 'about', "#{root_url}#about", class:'page-scroll' %>
+                </li>
+                <li>
+                  <%= link_to 'blog', "#{root_url}#blog", class:'page-scroll' %>
+                </li>
+                <li>
+                  <%= link_to 'photos', "#{root_url}#photos", class:'page-scroll' %>
+                </li>
+              <% end %>
               <% if user_signed_in? %>
                 <li>
-                  <%= link_to "logout", destroy_user_session_path, :method => :delete, class:'page-scroll' %>
+                  <%= link_to "logout", destroy_user_session_path, method: :delete, class:'page-scroll' %>
                 </li>
                 <li>
                   <%= link_to 'blogs', blogs_path, class:'page-scroll' %>
                 </li>
-              <% else %>
-                <li>
-                  <%= link_to 'blog', '#blog', class:'page-scroll' %>
-                </li>
               <% end %>
-              <li>
-                <%= link_to 'photos', '#photos', class:'page-scroll' %>
-              </li>
               <li>
                 <%= link_to 'peaking', 'https://www.facebook.com/Peaking-Software-193843850813732/timeline', target: :'_blank', class:'page-scroll' %>
               </li>
@@ -41,9 +52,3 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
-<header style="background-image:url(http://s3-us-west-1.amazonaws.com/soliskit/la-gradient.jpg); background-color: #333;">
-  <div class="header-content">
-    <div class="header-content-inner" style="min-height: 300px;">
-    </div>
-  </div>
-</header>
