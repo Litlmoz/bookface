@@ -1,25 +1,29 @@
-<div class='container'>
-  <br>
-  <br>
-  <br>
-  <br>
-  <%= image_tag 'camera.svg', class: :'header-photo', alt: 'camera' %>
-  <br>
-  <br>
-  <div class='row'>
-    <% @photos.each do |photo| %>
-    <div class='col-sm-6 col-md-4'>
-      <div class='thumbnail'>
-        <%= link_to photo do %>
-          <%= image_tag photo.image %>
-        <% end %>
-        <div class='caption'>
-          <p style='margin: 0 !important;'><%= photo.caption %></p>
+<!DOCTYPE html>
+<html>
+  <body>
+    <section>
+      <div class='container'>
+        <%= image_tag 'camera.svg', class: :'header-photo', alt: 'camera' %>
+        <br>
+        <br>
+        <br>
+        <div class='row'>
+          <% @photos.each do |photo| %>
+          <div class='col-sm-6 col-md-4'>
+            <div class='thumbnail'>
+              <%= link_to photo do %>
+                <%= image_tag photo.image %>
+              <% end %>
+              <div class='caption'>
+                <p style='margin: 0 !important;'><%= photo.caption %></p>
+              </div>
+            </div>
+          </div>
+          <% end %>
         </div>
+      <div class='container-fluid'>
+        <%= image_tag 'peaking_logo.png', class: :'img-responsive header-photo', alt: 'peaking logo' %>
       </div>
-    </div>
-    <% end %>
-  </div>
-<div class='container-fluid'>
-  <%= image_tag 'peaking_logo.png', class: :'img-responsive header-photo', alt: 'peaking logo' %>
-</div>
+    </section>
+  </body>
+</html>
