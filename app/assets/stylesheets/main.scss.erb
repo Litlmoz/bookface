@@ -2,6 +2,7 @@
 
 $link-hover-color: #F35E3E;
 $text-color: rgb(51, 51, 51);
+$link-color: #3B2E40;
 
 /********************************
 GENERAL
@@ -17,7 +18,7 @@ dd, dt {
   max-width: 150px;
   height: auto;
   border-radius: 100%;
-  background: #3B2E40;
+  background: $link-color;
 }
 .wrapper {
   background-color: $gray-lighter;
@@ -39,7 +40,7 @@ Nav Links
 }
 
 .navbar-default .navbar-header .navbar-brand {
-  color: #3B2E40 !important;
+  color: $link-color !important;
   font-size: 30px;
 }
 
@@ -48,7 +49,7 @@ Nav Links
 }
 
 .navbar-default .navbar-nav > li > a, {
-  color: #3B2E40 !important;
+  color: $link-color !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover, {
@@ -105,7 +106,7 @@ ul li p {
 
 .contact-info a {
   text-decoration: none;
-  color: $text-color !important;
+  color: $link-color !important;
 }
 
 .contact-info a:hover {
@@ -114,7 +115,7 @@ ul li p {
 
 #blog-link {
   text-decoration: underline;
-  color: $text-color !important;
+  color: $link-color !important;
   font-weight: bold;
 }
 
