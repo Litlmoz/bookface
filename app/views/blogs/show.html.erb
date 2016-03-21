@@ -1,13 +1,30 @@
-<dl class='col-xs-12 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-2'>
-  <dd>
-    <%= @blog.post %>
-  </dd>
-  <dd>
-    <%= link_to blogs_path, class: 'col-xs-offset-9 col-sm-offset-10 label label-default' do %>
-      <span><%= (@blog.post_date).to_formatted_s(:rfc822) %></span>
-    <% end %>
-  </dd>
-  <% if can? :manage, Blog %>
-    <%= link_to 'Edit', edit_blog_path(@blog), class:'col-sm btn btn-default' %>
-  <% end %>
-</dl>
+<!DOCTYPE html>
+<html>
+  <body>
+    <section>
+      <div class='container'>
+        <% if can? :manage, Blog %>
+          <%= link_to 'Edit', edit_blog_path(@blog), class:'col-sm-offset-2 btn btn-primary' %>
+        <% end %>
+      </div>
+
+      <article id='post' class='col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3'>
+        <dl>
+          <dt>
+            <h3 class='text-center'>
+              <%= @blog.title %>
+            </h3>
+          </dt>
+          <dd>
+            <%= simple_format(@blog.post) %>
+          </dd>
+          <dd>
+            <blockquote class="blockquote-reverse" style='font-size: 13px;'>
+              <%= (@blog.post_date).to_formatted_s(:rfc822) %>
+            </blockquote>
+          </dd>
+        </dl>
+      </article>
+    </section>
+  </body>
+</html>

@@ -2,25 +2,30 @@
 <html>
   <body>
     <section>
-      <%= image_tag 'camera.png', class: :'img-responsive header-photo', alt: 'camera' %>
+      <%= image_tag 'camera.svg', class: :'img-responsive header-photo', alt: 'camera' %>
 
-      <% if can? :manage, Photo %>
-        <%= link_to 'Upload Photo', new_photo_path, class: 'col-sm-offset-2 btn btn-success' %>
-      <% end %>
+      <div class='container'>
+        <% if can? :manage, Photo %>
+          <%= link_to 'Upload Photo', new_photo_path, class: 'col-sm-offset-2 btn btn-success' %>
+        <% end %>
+      </div>
+      <br>
 
-      <div class='row'>
-        <% @photos.each do |photo| %>
-        <div class='col-sm-6 col-md-4'>
-          <div class='thumbnail'>
-            <%= link_to photo do %>
-              <%= image_tag photo.image %>
-            <% end %>
-            <div class='caption'>
-              <p style='margin: 0 !important;'><%= photo.caption %></p>
+      <div class='container'>
+        <div class='row'>
+          <% @photos.each do |photo| %>
+          <div class='col-sm-6 col-md-4'>
+            <div class='thumbnail'>
+              <%= link_to photo do %>
+                <%= image_tag photo.image %>
+              <% end %>
+              <div class='caption'>
+                <p style='margin: 0 !important;'><%= photo.caption %></p>
+              </div>
             </div>
           </div>
+          <% end %>
         </div>
-        <% end %>
       </div>
     </section>
   </body>

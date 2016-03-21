@@ -1,23 +1,25 @@
-<br>
-<br>
-<br>
-<section class='photo-show'>
-  <div class='container-fluid'>
-    <div class='col-sm col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2'>
-      <div class='thumbnail'>
-        <%= image_tag @photo.image %>
-        <div class='caption'>
-          <p style='margin: 0 !important;'>
-            <%= @photo.caption %>
-          </p>
+<!DOCTYPE html>
+<html>
+  <body>
+    <section>
+      <div class='container-fluid'>
+        <div class='col-sm col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2'>
+          <div class='thumbnail'>
+            <%= image_tag @photo.image %>
+            <div class='caption'>
+              <p style='margin: 0 !important;'>
+                <%= @photo.caption %>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<% if can? :manage, Photo %>
-  <div class='btn-group'>
-    <%= link_to 'Edit', edit_photo_path(@photo), class:'col-sm-offset-2 btn btn-default' %>
-    <%= link_to 'Back', photos_path, class:'col-sm-offset-2 btn btn-default' %>
-  </div>
-<% end %>
+      <% if can? :manage, Photo %>
+        <div class='container'>
+          <%= link_to 'Edit', edit_photo_path(@photo), class:'col-sm-offset-2 btn btn-primary' %>
+          <%= link_to 'Back', photos_path, class:'col-sm-offset-2 btn btn-primary' %>
+        </div>
+      <% end %>
+    </section>
+  </body>
+</html>
