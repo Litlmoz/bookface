@@ -59,6 +59,8 @@ end
 group :development do
   # Setup favicon icons
   gem 'rails_real_favicon'
+  # Better Errors
+  gem 'better_errors'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
