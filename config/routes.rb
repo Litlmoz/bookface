@@ -3,11 +3,10 @@ Rails.application.routes.draw do
   root :to => 'page#index'
 
   devise_scope :user do
+    get 'login', to: 'devise/sessions#new', as: :login
     authenticated :user do
       root :to => 'blogs#new', as: :authenticated_root
     end
-    get 'login', to: 'devise/sessions#new', as: :login
-    get 'logout', to: 'devise/sessions#destroy', as: :logout
   end
 
   devise_for :users, controllers: {registrations: 'registrations'}
