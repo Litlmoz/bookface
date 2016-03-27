@@ -7,5 +7,4 @@ class PageController < ApplicationController
     @third_post = Blog.third
     @photos = Photo.all.order('presentation_order')
   end
-
 end

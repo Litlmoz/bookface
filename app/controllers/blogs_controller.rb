@@ -30,10 +30,10 @@ class BlogsController < ApplicationController
 
     respond_to do |format|
       if @blog.save
-        format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
+        format.html { redirect_to @blog, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @blog }
       else
-        format.html { render :new }
+        format.html { render :new, alert: "#{@blog.errors.to_a.join("\n ")}" }
         format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
     end
@@ -44,10 +44,10 @@ class BlogsController < ApplicationController
   def update
     respond_to do |format|
       if @blog.update(blog_params)
-        format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
+        format.html { redirect_to @blog, notice: 'Post was successfully updated.' }
         format.json { render :show, status: :ok, location: @blog }
       else
-        format.html { render :edit }
+        format.html { render :edit, alert: "#{@blog.errors.to_a.join("\n ")}" }
         format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
     end
