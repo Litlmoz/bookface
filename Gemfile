@@ -28,12 +28,10 @@ gem 'font-awesome-rails'
 gem 'newrelic_rpm'
 # Allows mocking and stubbing of methods on real (non-mock) classes
 gem 'mocha', '~> 1.1'
-# rspec-rails is a testing framework for 4.x
-gem 'rspec-rails', '~> 3.4', groups: [:development, :test]
 # Replaces the need for plugins, and ensures that Rails 4 is optimally configured for executing on Heroku
 # https://github.com/heroku/rails_stdout_logging/issues/23
 # Conflict with Rails 4.2.6
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.4'
@@ -52,8 +50,8 @@ gem 'sdoc', '~> 0.4.1', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  # Access .env file before starting app
-  gem 'dotenv-rails'
+  # rspec-rails is a testing framework for 4.x
+  gem 'rspec-rails', '~> 3.4'
 end
 
 group :development do
@@ -61,6 +59,10 @@ group :development do
   gem 'rails_real_favicon'
   # Better Errors
   gem 'better_errors'
+  # Sets Rails to log to stdout, prints SQL queries
+  gem 'rails_stdout_logging'
+  # Access .env file before starting app
+  gem 'dotenv-rails'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
