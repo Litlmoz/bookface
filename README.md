@@ -70,6 +70,6 @@ gem 'dotenv-rails', '>= 2.1.0'
 ```
 #### Contact Info:
 David Solis  
-david@soliskit.com  
+hello@davidsolis.me  
 +1(415) 244-7263  
-[soliskit.com](http://www.soliskit.com)
+[davidsolis.me](http://www.davidsolis.me)

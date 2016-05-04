@@ -52,6 +52,8 @@ group :development, :test do
   gem 'byebug'
   # rspec-rails is a testing framework for 4.x
   gem 'rspec-rails', '~> 3.4'
+  # Sets Rails to log to stdout, prints SQL queries
+  gem 'rails_stdout_logging'
 end
 
 group :development do
@@ -59,8 +61,6 @@ group :development do
   gem 'rails_real_favicon'
   # Better Errors
   gem 'better_errors'
-  # Sets Rails to log to stdout, prints SQL queries
-  gem 'rails_stdout_logging'
   # Access .env file before starting app
   gem 'dotenv-rails'
   # Access an IRB console on exception pages or by using <%= console %> in views

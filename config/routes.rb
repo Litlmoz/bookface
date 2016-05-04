@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  root :to => 'page#index'
-
   devise_scope :user do
     get 'login', to: 'devise/sessions#new', as: :login
     authenticated :user do
@@ -9,6 +7,8 @@ Rails.application.routes.draw do
     end
   end
 
+  root :to => 'page#index'
+  
   devise_for :users, controllers: {registrations: 'registrations'}
 
   scope "/admin" do
