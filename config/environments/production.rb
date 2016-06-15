@@ -1,8 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  Rails.application.routes.default_url_options[:host] = 'davidesolis.com'
+  Rails.application.routes.default_url_options[:host] = 'davidsolis.me'
   # Mailer host for env
-  config.action_mailer.default_url_options = {:host => 'davidesolis.com'}
+  config.action_mailer.default_url_options = {:host => 'davidsolis.me'}
 
   # Code is not reloaded between requests.
   config.cache_classes = true
