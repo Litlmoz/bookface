@@ -1,8 +1,0 @@
-<%= simple_form_for(@blog, html: { class: 'form-horizontal'}) do |f| %>
-
-    <%= f.input :title %>
-    <%= f.input :post %>
-    <%= f.input :post_date,
-                order: [:month, :day, :year] %>
-    <%= f.submit 'Save', class: 'col-sm-offset-2 btn btn-success' %>
-<% end %>
