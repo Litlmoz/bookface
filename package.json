@@ -1,6 +1,9 @@
 {
   "name": "soliskit",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
   "description": "This app does one little thing, and does it well.",
   "keywords": [
     "FaceTime",
