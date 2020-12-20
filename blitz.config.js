@@ -1,6 +1,9 @@
 const { sessionMiddleware, unstable_simpleRolesIsAuthorized } = require("@blitzjs/server")
 
 module.exports = {
+  log: {
+    level: 'info'
+  },
   middleware: [
     sessionMiddleware({
       unstable_isAuthorized: unstable_simpleRolesIsAuthorized,
