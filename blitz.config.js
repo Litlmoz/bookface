@@ -4,6 +4,7 @@ module.exports = {
   log: {
     level: 'info'
   },
+  reactStrictMode: false,
   middleware: [
     sessionMiddleware({
       unstable_isAuthorized: unstable_simpleRolesIsAuthorized,
