@@ -1,8 +1,5 @@
 # dependencies
 node_modules
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
 .pnp.*
 .npm
 web_modules/
@@ -10,7 +7,6 @@ web_modules/
 # blitz
 /.blitz/
 /.next/
-*.sqlite
 .now
 .blitz-console-history
 blitz-log.log
@@ -45,7 +41,6 @@ lib-cov
 *.tsbuildinfo
 .eslintcache
 .node_repl_history
-.yarn-integrity
 
 # Serverless directories
 .serverless/
