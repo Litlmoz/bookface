@@ -29,15 +29,12 @@
   "prisma": {
     "schema": "db/schema.prisma"
   },
+  "cacheDirectories": [
+    ".next/cache"
+  ],
   "prettier": {
     "semi": false,
     "printWidth": 100
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && pretty-quick --staged",
-      "pre-push": "tsc && npm run lint && npm run test"
-    }
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
