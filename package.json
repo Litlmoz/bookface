@@ -5,23 +5,17 @@
     "node": "14.x",
     "npm": "6.14.10"
   },
-  "description": "This app does one little thing, and does it well.",
-  "keywords": [
-    "FaceTime",
-    "Zoom",
-    "school"
-  ],
   "website": "https://video.soliskit.com/",
-  "repository": "https://github.com/litlmoz/soliskit",
   "logo": "/logo.png",
   "scripts": {
     "studio": "blitz db studio",
     "build": "blitz db migrate && blitz build",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
-    "production": "blitz start --production --port $PORT",
     "dev": "blitz start --port 5000",
+    "prod": "blitz start --production --port $PORT",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "pretty-quick": "pretty-quick"
   },
   "browserslist": [
     "defaults"
@@ -32,15 +26,6 @@
   "cacheDirectories": [
     ".next/cache"
   ],
-  "prettier": {
-    "semi": false,
-    "printWidth": 100
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "eslint --fix"
-    ]
-  },
   "dependencies": {
     "@prisma/client": "2.12.1",
     "blitz": "0.27.1",
@@ -51,6 +36,15 @@
     "react-final-form": "6.5.2",
     "secure-password": "4.0.0",
     "zod": "1.11.11"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "devDependencies": {
     "@prisma/cli": "2.12.1",
@@ -83,5 +77,13 @@
     "ts-node": "9.1.1",
     "typescript": "4.1.3"
   },
+  "author": "David Solis",
+  "repository": "https://github.com/litlmoz/soliskit",
+  "description": "This app does one little thing, and does it well.",
+  "keywords": [
+    "FaceTime",
+    "Zoom",
+    "school"
+  ],
   "private": true
 }

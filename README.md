@@ -34,14 +34,46 @@ Runs your tests using Jest.
 
 ```
 blitz test
-or
-yarn test
 ```
 
 Blitz comes with a test setup using [Jest](https://jestjs.io/) and [react-testing-library](https://testing-library.com/).
 
 ## Commands
 
+## Git hooks
+Run Prettier, an opinionated code formatter, using Pretty Quick
+Install [pretty-quick](https://github.com/azz/pretty-quick)
+```
+npm install --save-dev prettier pretty-quick
+```
+Usage?
+```
+npx -p prettier@latest -p pretty-quick pretty-quick
+```
+Add `"pretty-quick": "pretty-quick"` to the `"scripts"` section of `package.json`
+Add to the root of `package.json`
+```
+"lint-staged": {
+  "*.{js,ts,tsx}": [
+    "eslint --fix"
+  ]
+}
+```
+Install [husky](https://typicode.github.io/husky/#/)
+```
+npm install husky@next --save-dev
+```
+Enable Git hooks
+```
+npx husky install
+```
+Add a hook
+```
+npx husky add .husky/pre-commit "lint-staged && pretty-quick --staged"
+```
+```
+npx husky add .husky/pre-push "tsc && npm run lint && npm run test"
+```
 Blitz comes with a powerful CLI that is designed to make development easy and fast. You can install it with `npm i -g blitz`
 
 ```
