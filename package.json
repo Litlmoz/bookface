@@ -28,7 +28,7 @@
   ],
   "dependencies": {
     "@prisma/client": "2.12.1",
-    "blitz": "0.27.1",
+    "blitz": "0.45.3",
     "final-form": "4.20.1",
     "react": "0.0.0-experimental-4ead6b530",
     "react-dom": "0.0.0-experimental-4ead6b530",
